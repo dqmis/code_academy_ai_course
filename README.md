@@ -31,10 +31,13 @@ Follow instructions presented in [the website](https://git-scm.com/book/en/v2/Ge
 * `$ pre-commit install`
 
 ## Run the python file and see if you can get an output
-* `$ python src/main.py`
+* Execute Python file: `$ python src/main.py`
 You should get this output:
 ```shell
         messages
 0  Hello, World!
 1      Sveikiii!
 ```
+
+## Start Jupyter Lab and run notebook
+* Start Jupyter Lab: `$ jupyter lab`
