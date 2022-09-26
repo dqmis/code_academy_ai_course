@@ -41,3 +41,4 @@ You should get this output:
 
 ## Start Jupyter Lab and run notebook
 * Start Jupyter Lab: `$ jupyter lab`
+* Execute Notebook inside notebooks dir
