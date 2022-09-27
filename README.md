@@ -29,7 +29,7 @@ Follow instructions presented in [the website](https://git-scm.com/book/en/v2/Ge
 * `.venv\bin\activate` this will activate a newly created environment
 
 ## Set-up pre-commit
-* `$ pre-commit install`
+* `$ pre-commit install` <- NEDAROM KOLKAS
 
 ## Run the python file and see if you can get an output
 * Execute Python file: `$ python src/main.py`
