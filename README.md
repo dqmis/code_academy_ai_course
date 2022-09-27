@@ -26,6 +26,7 @@ Follow instructions presented in [the website](https://git-scm.com/book/en/v2/Ge
 ### Install dependencies
 * `$ poetry install` (this will create a `poetry.lock` file and a virtual environment in the .venv folder)
 * `$ source .venv/bin/activate` this will activate a newly created environment
+* `.venv\bin\activate` this will activate a newly created environment
 
 ## Set-up pre-commit
 * `$ pre-commit install`
