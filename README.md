@@ -23,7 +23,6 @@ Follow instructions presented in [the website](https://git-scm.com/book/en/v2/Ge
 
 ### Set up Poetry
 * Install (full guide: https://python-poetry.org/docs/#installation)
-    * TL;DR: `$ curl -sSL https://install.python-poetry.org | python3 - --version 1.2.0`
 * Configure:
     * `$ poetry config virtualenvs.in-project true` - creates the virtual environment in the current folder as opposed to somewhere random
     * `$ poetry self add poetry-dotenv-plugin` - enabled sourcing environment variables from .env when commands run through Poetry
