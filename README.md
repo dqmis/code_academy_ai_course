@@ -32,8 +32,11 @@ Follow instructions presented in [the website](https://git-scm.com/book/en/v2/Ge
 ### Install dependencies
 * Go to this project's dir with your terminal: `$ cd <PATH_TO_THE_PROJECT>`
 * `$ poetry install` (this will create a `poetry.lock` file and a virtual environment in the .venv folder)
-* `$ source .venv/bin/activate` this will activate a newly created environment
-* `.venv\bin\activate` this will activate a newly created environment
+* If you use OSX / Linux
+   * `$ source .venv/bin/activate` this will activate a newly created environment
+* If you use windows
+   * `.venv\Scripts\activate` this will activate a newly created environment
+* Alternatively run `$ poetry shell` to initialize the environment.
 
 ### Set-up pre-commit
 * `$ pre-commit install`
