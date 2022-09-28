@@ -1,5 +1,4 @@
 # CodeAcademy AI course material
-Simple Python project. Use it to check if your set up is complete
 
 ## Set up
 
