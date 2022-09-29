@@ -3,7 +3,8 @@
 ## Set up
 
 ### Install VSCode
-Follow instructions presented in [the website](https://code.visualstudio.com/download).
+* Follow instructions presented in [the website](https://code.visualstudio.com/download).
+* Install `Python`, `Jupyter`, `autoDocstring`, `Mypy`, `Pylance` extensions
 
 ### Set up Git
 Follow instructions presented in [the website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
