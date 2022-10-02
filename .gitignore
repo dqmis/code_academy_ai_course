@@ -66,3 +66,6 @@ local_run_data/*
 
 #hypothesis
 .hypothesis/
+
+
+just_for_me/
