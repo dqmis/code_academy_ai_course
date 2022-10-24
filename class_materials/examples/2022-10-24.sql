@@ -76,3 +76,20 @@ VALUES
 ("andrzej", "sapkowski", "1948-01-01", ""),
 ("jane", "austen", "1775-01-01", "");
 
+CREATE TABLE book_genre (
+	book_id int NOT NULL,
+	genre_id int NOT NULL,
+
+	CONSTRAINT pk_book_genre PRIMARY KEY (book_id, genre_id),
+	CONSTRAINT fk_book_id FOREIGN KEY (book_id) REFERENCES books(id),
+	CONSTRAINT fk_genre_id FOREIGN KEY (genre_id) REFERENCES genres(id)
+);
+
+
+CREATE TABLE book_author (
+	book_id int NOT NULL,
+	author_id int NOT NULL,
+
+	CONSTRAINT pk_book_author PRIMARY KEY (book_id, author_id),
+	CONSTRAINT fk_author_id FOREIGN KEY (author_id) REFERENCES authors(id)
+);
