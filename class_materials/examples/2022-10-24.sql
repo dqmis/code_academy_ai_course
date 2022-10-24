@@ -68,5 +68,11 @@ INSERT INTO books (title, number_of_pages, publish_date, description, publisher_
 ("the witcher", 235, "1990-01-01", "The series revolves around the eponymous witcher, Geralt of Rivia. In Sapkowski's works, witchers are beast hunters who develop supernatural abilities at a young age to battle wild beasts and monsters", 4),
 ("pride and prejudice", 654, "1813-01-01", "The novel follows the character development of Elizabeth Bennet, the dynamic protagonist of the book who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness.", 6);
 
-
+INSERT INTO authors (first_name, last_name, birth_date, description)
+VALUES
+("mary", "shelley", "1797-01-01", ""),
+("bram", "stoker", "1847-01-01", ""),
+("stephen", "king", "1947-01-01", ""),
+("andrzej", "sapkowski", "1948-01-01", ""),
+("jane", "austen", "1775-01-01", "");
 
