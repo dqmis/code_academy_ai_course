@@ -93,3 +93,21 @@ CREATE TABLE book_author (
 	CONSTRAINT pk_book_author PRIMARY KEY (book_id, author_id),
 	CONSTRAINT fk_author_id FOREIGN KEY (author_id) REFERENCES authors(id)
 );
+
+INSERT INTO book_genre (book_id, genre_id)
+VALUES
+(2, 1),
+(4, 1),
+(5, 1),
+(6, 1),
+(6, 4),
+(7, 4),
+(7, 3);
+
+INSERT INTO book_author (book_id, author_id)
+VALUES
+(2, 6),
+(4, 7),
+(5, 8),
+(6, 9),
+(7, 10);
