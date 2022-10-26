@@ -288,3 +288,34 @@ from
 	left join book_genre on books.id = book_genre.book_id
 	left join genres on genres.id = book_genre.genre_id
 	left join authors on authors.id = book_author.author_id;
+
+select
+	publishers.*,
+	books.*
+from
+	publishers
+	left join books on publishers.id = books.publisher_id
+where
+	books.id is not null;
+
+select
+	publishers.title,
+	count(*) as books_count
+from
+	publishers
+	inner join books on publishers.id = books.publisher_id
+	and books.number_of_pages <= 500
+group by
+	publishers.title;
+
+select
+	publishers.title,
+	count(*) as books_count
+from
+	publishers
+	left join books on publishers.id = books.publisher_id
+	and books.number_of_pages <= 500
+where
+	books.id is not null
+group by
+	publishers.title;
