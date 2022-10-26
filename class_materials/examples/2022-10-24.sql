@@ -260,7 +260,7 @@ where
 	and birth_date < "2000-01-01";
 
 SELECT
-	books.id,
+	books.id as book_id,
 	books.title,
 	publishers.title,
 	publishers.company_id
