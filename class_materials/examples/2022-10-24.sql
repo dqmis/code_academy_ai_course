@@ -169,11 +169,11 @@ VALUES
 INSERT INTO
 	book_author (book_id, author_id)
 VALUES
-	(2, 6),
-	(4, 7),
-	(5, 8),
-	(6, 9),
-	(7, 10);
+	(1, 1),
+	(2, 2),
+	(3, 3),
+	(5, 4),
+	(5, 5);
 
 SELECT
 	*
