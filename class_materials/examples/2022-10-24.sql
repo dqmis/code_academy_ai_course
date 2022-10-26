@@ -276,3 +276,15 @@ from
 	books
 	left join book_author on books.id = book_author.book_id
 	left join authors on authors.id = book_author.author_id;
+
+SELECT
+	books.*,
+	genres.title as genre,
+	authors.first_name as author_first_name,
+	authors.last_name as author_last_name
+from
+	books
+	left join book_author on books.id = book_author.book_id
+	left join book_genre on books.id = book_genre.book_id
+	left join genres on genres.id = book_genre.genre_id
+	left join authors on authors.id = book_author.author_id;
