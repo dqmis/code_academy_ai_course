@@ -224,7 +224,7 @@ SELECT
 from
 	books
 WHERE
-	publisher_id = 5;
+	publisher_id = 2;
 
 SELECT
 	COUNT(*) as books_count
