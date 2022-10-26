@@ -23,16 +23,7 @@ MODIFY
 ALTER TABLE
 	books
 ADD
-	CONSTRAINT fk_publisher_id FOREIGN KEY (publisher_id) REFERENCES publishers(id);
-
-CREATE TABLE genre (
-	id int NOT NULL AUTO_INCREMENT,
-	title varchar(255) NOT NULL,
-	INDEX(title),
-	PRIMARY KEY (id)
-);
-
-DROP TABLE genre;
+	CONSTRAINT fk_books_publisher_id FOREIGN KEY (publisher_id) REFERENCES publishers(id);
 
 CREATE TABLE genres (
 	id int NOT NULL AUTO_INCREMENT,
@@ -82,7 +73,7 @@ VALUES
 	("another publisher", 12346);
 
 ALTER TABLE
-	books RENAME COLUMN pulish_date to publish_date;
+	`books` CHANGE `pulish_date` `publish_date` DATETIME NULL DEFAULT NULL;
 
 INSERT INTO
 	books (
@@ -98,7 +89,7 @@ VALUES
 		280,
 		"1818-01-01",
 		"Frankenstein tells the story of Victor Frankenstein, a young scientist who creates a sapient creature in an unorthodox scientific experiment",
-		5
+		1
 	);
 
 INSERT INTO
@@ -115,28 +106,28 @@ VALUES
 		287,
 		"1897-01-01",
 		"„Drakula“ yra epistolinis romanas, parašytas laiškų, dienoraščių, straipsnių, užrašų forma. Grafo Drakulos prototipas yra Valakijos princas Vladas III, Vladas Drakula, pagarsėjęs savo žiaurumu.",
-		5
+		1
 	),
 	(
 		"it",
 		1142,
 		"1986-01-01",
 		"Romane „Tas“ aprašoma Deryje gyvenanti ir žudanti vaikus antgamtinė būtybė, gebanti keisti savo esybės formą ir pavidalą",
-		5
+		1
 	),
 	(
 		"the witcher",
 		235,
 		"1990-01-01",
 		"The series revolves around the eponymous witcher, Geralt of Rivia. In Sapkowski's works, witchers are beast hunters who develop supernatural abilities at a young age to battle wild beasts and monsters",
-		4
+		2
 	),
 	(
 		"pride and prejudice",
 		654,
 		"1813-01-01",
 		"The novel follows the character development of Elizabeth Bennet, the dynamic protagonist of the book who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness.",
-		6
+		1
 	);
 
 INSERT INTO
@@ -152,8 +143,8 @@ CREATE TABLE book_genre (
 	book_id int NOT NULL,
 	genre_id int NOT NULL,
 	CONSTRAINT pk_book_genre PRIMARY KEY (book_id, genre_id),
-	CONSTRAINT fk_book_id FOREIGN KEY (book_id) REFERENCES books(id),
-	CONSTRAINT fk_genre_id FOREIGN KEY (genre_id) REFERENCES genres(id)
+	CONSTRAINT fk_book_genre_book_id FOREIGN KEY (book_id) REFERENCES books(id),
+	CONSTRAINT fk_book_genre_genre_id FOREIGN KEY (genre_id) REFERENCES genres(id)
 );
 
 CREATE TABLE book_author (
@@ -167,13 +158,13 @@ CREATE TABLE book_author (
 INSERT INTO
 	book_genre (book_id, genre_id)
 VALUES
+	(1, 1),
 	(2, 1),
+	(3, 1),
 	(4, 1),
-	(5, 1),
-	(6, 1),
-	(6, 4),
-	(7, 4),
-	(7, 3);
+	(4, 4),
+	(5, 4),
+	(5, 2);
 
 INSERT INTO
 	book_author (book_id, author_id)
