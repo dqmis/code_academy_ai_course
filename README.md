@@ -1,5 +1,12 @@
 # CodeAcademy AI course material
 
+## Related repositories
+| **Title**             | **Description**                                                          | **Link**                                       |
+|-----------------------|--------------------------------------------------------------------------|------------------------------------------------|
+| Simple Python Project | Project that showcases Python project structure and usability of modules | https://github.com/dqmis/simple_python_project |
+| Dog Shelter           | Repository to showcase FastAPI functionality                             | https://github.com/dqmis/dog_shelter           |
+| Recipes Scraper       | Project showcasing web scraping with Python                              | https://github.com/dqmis/recipes_scraper       |
+
 ## Set up
 
 ### Install VSCode
