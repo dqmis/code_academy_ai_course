@@ -7,6 +7,8 @@
 | Dog Shelter           | Repository to showcase FastAPI functionality                             | https://github.com/dqmis/dog_shelter           |
 | Recipes Scraper       | Project showcasing web scraping with Python                              | https://github.com/dqmis/recipes_scraper       |
 
+## Assignments
+
 ## Set up
 
 ### Install VSCode
