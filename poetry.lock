@@ -1516,6 +1516,20 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
+name = "sklearn-pandas"
+version = "2.2.0"
+description = "Pandas integration with sklearn"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+numpy = ">=1.18.1"
+pandas = ">=1.1.4"
+scikit-learn = ">=0.23.0"
+scipy = ">=1.5.1"
+
+[[package]]
 name = "smmap"
 version = "5.0.0"
 description = "A pure Python implementation of a sliding window memory map manager"
@@ -1733,7 +1747,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = "3.9.*"
-content-hash = "dbc64f7df486ebf85522b394388ab808a6090d78e6b54056003c28d27d8b527a"
+content-hash = "7981357182c3f7e7fce02ed59a59e310e983724f64660fa87b51ab5e87033922"
 
 [metadata.files]
 anyio = [
@@ -2942,6 +2956,10 @@ setuptools-scm = [
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
+]
+sklearn-pandas = [
+    {file = "sklearn-pandas-2.2.0.tar.gz", hash = "sha256:bf908ea0e384e132da04355c7db67bd4f8efe145f0c9cd9f14726ce899d27542"},
+    {file = "sklearn_pandas-2.2.0-py2.py3-none-any.whl", hash = "sha256:9383e577be14448ee7f7d5f42e78b89394c1f71be43377d2b1bcbd876a94f629"},
 ]
 smmap = [
     {file = "smmap-5.0.0-py3-none-any.whl", hash = "sha256:2aba19d6a040e78d8b09de5c57e96207b09ed71d8e55ce0959eeee6c8e190d94"},
