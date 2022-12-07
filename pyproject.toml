@@ -20,6 +20,8 @@ sklearn-pandas = "^2.2.0"
 fastapi = "^0.88.0"
 uvicorn = "^0.20.0"
 cloudpickle = "^2.2.0"
+wordcloud = "^1.8.2.2"
+nltk = "^3.7"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
